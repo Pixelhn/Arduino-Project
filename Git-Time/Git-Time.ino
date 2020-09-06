@@ -1,8 +1,4 @@
 //任何命令下达前均需要确保模块属于“OK”待定状态，且UART缓存字符数量为0
-char SSIDD[] ="131";
-char PASSWORD[] ="tjlg28-131";
-char TCPSERVER[]="";
-char TCPIP[]="";
 
 void * getchars(int start,int charslength);
 void cheakchar(int lastchar);
