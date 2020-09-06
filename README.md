@@ -1,5 +1,3 @@
 # Arduino 项目
 
-Arduino UNO R3
-
-ESP-01s(AT)
+使用开发板Arduino UNO R3，ESP01S作为WiFi模块。
