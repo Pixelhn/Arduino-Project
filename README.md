@@ -1,3 +1,5 @@
 # Arduino 项目
 
-## 设备
+Arduino UNO R3
+
+ESP-01s(AT)
