@@ -15,8 +15,8 @@ void loop(){
   lcd.print("Hello, World!");
   delay(1000);
   lcd.clear();
-  lcd.setCursor(0,1);
-  lcd.print("12345678901234567890");
+  lcd.setCursor(3,1);
+  lcd.print("12345678901234567890hb");
   delay(1000);
   lcd.clear(); 
 }

@@ -1,4 +1,4 @@
-# 1.Digital输入与输出
+## 1.Digital输入与输出
 
 ```c
 pinMode(pin,mode);
@@ -28,7 +28,7 @@ digitalRead(pin)
 
 ----
 
-# 2.Analog模拟输入ADC与模拟输出PWM
+## 2.Analog模拟输入ADC与模拟输出PWM
 
 ```
 analogRead(pin);
@@ -54,7 +54,7 @@ PWM模拟输出，输出模拟电压
 
 无需定义引脚属性
 
-# 3.UART通信
+## 3.UART通信
 
 ```
 Serial.begin(115200);
@@ -90,7 +90,7 @@ Serial.read();
 
 
 
-# 4.Pulse脉冲
+## 4.Pulse脉冲
 
 ```
 pulseln(pin,state,timeout);
@@ -103,3 +103,41 @@ pulseln(pin,state,timeout);
 **state**：脉冲响应状态 HIGH或LOW
 
 **timeout**：超过时间 超过时间还未读到则返回0
+
+# LCD 1602
+
+[#include <LiquidCrystal_I2C.h>](https://github.com/marcoschwartz/LiquidCrystal_I2C/archive/master.zip)
+
+引入库
+
+```c
+#include <LiquidCrystal_I2C.h>
+```
+
+初始化
+
+```c
+int lcdColumns = 16;
+int lcdRows = 2;
+LiquidCrystal_I2C lcd(0x27, lcdColumns, lcdRows);
+```
+
+启动
+
+```c
+lcd.init();                  
+```
+
+控制
+
+```c
+lcd.backlight();
+lcd.noBacklight();//控制背光
+
+lcd.setCursor(4, 0);// 起始列，起始行
+
+lcd.print(displaychars);//输出字符
+
+lcd.clear();//清屏
+```
+

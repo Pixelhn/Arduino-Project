@@ -1,5 +1,5 @@
 {
     "port": "COM3",
     "board": "arduino:avr:uno",
-    "sketch": "AT-TIME2.0\\AT-TIME2.0.ino"
+    "sketch": "LCD-Helloword\\LCD-Helloword.ino"
 }
