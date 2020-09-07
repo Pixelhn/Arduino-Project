@@ -34,11 +34,11 @@ void bootesp(){//启动与初始化
     cheaklastchar(75);//K
     Serial.println("AT+CWMODE=1");//STA模式
     cheaklastchar(75);//K
-    Serial.println("AT+CWJAP_CUR=\"131\",\"tjlg28-131\"");//连接WiFi
+    Serial.println("AT+CWJAP_CUR=\"SSID\",\"PASSWORD\"");//连接WiFi
     cheaklastchar(75);//K
     Serial.println("AT+CIPSNTPCFG=1,8,\"ntp.aliyun.com\",\"ntp1.aliyun.com\"");//配置NTP
     cheaklastchar(75);//K
-    Serial.println("AT+CIPSTART=\"TCP\",\"123.57.50.208\",8887");   
+    Serial.println("AT+CIPSTART=\"TCP\",\"IP\",Port");   
     cheaklastchar(75);//K
 }
 

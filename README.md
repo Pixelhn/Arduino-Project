@@ -1,5 +1,7 @@
-# Arduino 项目
+# Arduino
 
-使用开发板Arduino UNO R3
+Board:Arduino UNO R3
 
-ESP01S作为WiFi模块。
+WiFi Module：ESP8266(AT)
+
+Display:1602A
