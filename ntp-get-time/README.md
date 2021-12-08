@@ -1,1 +1,1 @@
-利用ESP-01S作为WiFi模块，使用AT命令获取当前网络时间，再发送至指定服务器。
+利用ESP-01作为Wifi模块，使用UART与Arduino Uno通信，Uno使用AT命令获取当前网络时间。
